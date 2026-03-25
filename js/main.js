@@ -43,7 +43,7 @@ function bookOnWhatsApp() {
     return;
   }
 
-  const msg = `Hello Quixline! 👋\n\n`
+  const msg = `Hello Quinline! 👋\n\n`
     + `*New Booking Request*\n`
     + `━━━━━━━━━━━━━━━━━━\n`
     + `👤 *Name:* ${name}\n`

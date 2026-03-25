@@ -40,6 +40,6 @@ quixline/
 4. To update social media links, open `index.html` and find the `footer-socials` section.
 
 ## Contacts
-- Quin: +237 671 319 479
-- Alexine: +237 654 091 559
+- Quin: +237 622 114 407
+- Alexine: +237 670 659 166
 - Location: Biyam Assi, Yaoundé, Cameroon
