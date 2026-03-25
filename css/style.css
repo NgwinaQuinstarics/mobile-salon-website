@@ -102,7 +102,7 @@ nav.scrolled {
 }
 .hero-bg {
   position: absolute; inset:0;
-  background: url('../images/hero-bg.jpg') center/cover no-repeat;
+  background: url('../images/hero.jpg') center/cover no-repeat;
   transform: scale(1.05);
   transition: transform 8s ease;
 }
