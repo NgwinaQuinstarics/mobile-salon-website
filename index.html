@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Quixline Mobile Salon – Luxury Hair at Your Doorstep</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+<link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<!-- ═══ NAVIGATION ═══ -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">QUIX<span>line</span></a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#why">Why Us</a></li>
+    <li><a href="#booking">Book</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="https://wa.me/237671319479?text=Hello%20Quixline!%20I%27d%20like%20to%20book%20a%20service." target="_blank" class="nav-cta">Book Now</a>
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" onclick="toggleMenu()">About</a>
+  <a href="#services" onclick="toggleMenu()">Services</a>
+  <a href="#pricing" onclick="toggleMenu()">Pricing</a>
+  <a href="#gallery" onclick="toggleMenu()">Gallery</a>
+  <a href="#why" onclick="toggleMenu()">Why Us</a>
+  <a href="#booking" onclick="toggleMenu()">Book Now</a>
+  <a href="#contact" onclick="toggleMenu()">Contact</a>
+</div>
+
+<!-- ═══ HERO ═══ -->
+<section id="hero">
+  <div class="hero-bg" id="heroBg"></div>
+  <div class="hero-content">
+    <div class="hero-badge">✦ Yaoundé's Premium Mobile Salon ✦</div>
+    <h1 class="hero-title">
+      Luxury Hair Services
+      <em class="gold">At Your Doorstep</em>
+    </h1>
+    <p class="hero-sub">
+      Experience world-class grooming in the comfort of your home. Quixline brings the salon to you — because true luxury is effortless.
+    </p>
+    <div class="hero-buttons">
+      <a href="https://wa.me/237671319479?text=Hello%20Quixline!%20I%27d%20like%20to%20book%20a%20service." target="_blank" class="btn-gold">
+        <span><i class="fab fa-whatsapp"></i> Book on WhatsApp</span>
+      </a>
+      <a href="#services" class="btn-outline">
+        Our Services <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ═══ ABOUT ═══ -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-image-wrap reveal-left">
+        <img src="images/about.jpg" alt="Quixline – Quin & Alexine"
+             onerror="this.style.display='none'"/>
+      </div>
+      <div class="about-text reveal-right">
+        <div class="section-label">Our Story</div>
+        <h2 class="section-title">Crafted for the <em>Discerning</em> Client</h2>
+        <div class="divider"></div>
+        <p>
+          Quixline Mobile Salon was born from a partnership between two passionate stylists — <strong style="color:var(--gold)">Quin</strong> and <strong style="color:var(--gold)">Alexine</strong> — united by one belief: premium hair care should come to you, not the other way around. Based in Biyam Assi, Yaoundé, we deliver salon-grade services directly to your home, office, or event.
+        </p>
+        <p>
+          Together, we bring a unique blend of precision barbering and creative styling. Our duo is trained in the latest techniques, equipped with professional-grade tools, and committed to the highest standards of hygiene.
+        </p>
+        <p>
+          Whether it's a flawless barb, luxurious braids, or a full color transformation — we arrive prepared, we work as a team, and we leave you looking extraordinary.
+        </p>
+        <div class="about-stats">
+          <div class="stat-item">
+            <span class="stat-number">500+</span>
+            <span class="stat-label">Happy Clients</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">5+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Mobile Service</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SERVICES ═══ -->
+<section id="services">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">What We Offer</div>
+      <h2 class="section-title">Premium <em>Services</em></h2>
+      <div class="divider"></div>
+      <p style="color:var(--text-muted);max-width:540px;line-height:1.9;font-weight:300;">
+        Every service is delivered with precision, using professional-grade tools and premium products tailored to your hair type.
+      </p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal delay-1">
+        <div class="service-icon"><i class="fas fa-cut"></i></div>
+        <h3>Professional Barbing</h3>
+        <p>Precision cuts, fades, line-ups, and beard grooming by master barbers. Every detail meticulously crafted to complement your style.</p>
+        <a href="https://wa.me/237671319479?text=Hello%20Quixline!%20I%27d%20like%20to%20book%20a%20Professional%20Barbing%20session." target="_blank" class="service-price">Book This Service</a>
+      </div>
+      <div class="service-card reveal delay-2">
+        <div class="service-icon"><i class="fas fa-hands"></i></div>
+        <h3>Luxury Hair Braiding</h3>
+        <p>From box braids to cornrows, faux locs and beyond — intricate braid styles executed with patience, skill, and lasting results.</p>
+        <a href="https://wa.me/237654091559?text=Hello%20Quixline!%20I%27d%20like%20to%20book%20a%20Luxury%20Hair%20Braiding%20session." target="_blank" class="service-price">Book This Service</a>
+      </div>
+      <div class="service-card reveal delay-3">
+        <div class="service-icon"><i class="fas fa-palette"></i></div>
+        <h3>Hair Coloring & Dyeing</h3>
+        <p>Bold transformations or subtle highlights — our color specialists craft vivid, long-lasting results with premium salon products.</p>
+        <a href="https://wa.me/237654091559?text=Hello%20Quixline!%20I%27d%20like%20to%20book%20a%20Hair%20Coloring%20%26%20Dyeing%20session." target="_blank" class="service-price">Book This Service</a>
+      </div>
+      <div class="service-card reveal delay-4">
+        <div class="service-icon"><i class="fas fa-spa"></i></div>
+        <h3>Hair Treatment</h3>
+        <p>Deep conditioning, protein treatments, scalp therapy, and repair masks that restore vitality, shine, and strength to your hair.</p>
+        <a href="https://wa.me/237654091559?text=Hello%20Quixline!%20I%27d%20like%20to%20book%20a%20Hair%20Treatment%20session." target="_blank" class="service-price">Book This Service</a>
+      </div>
+      <div class="service-card reveal delay-5">
+        <div class="service-icon"><i class="fas fa-crown"></i></div>
+        <h3>VIP Home Service Haircuts</h3>
+        <p>Our signature experience — a full luxury salon session in the comfort of your home. Complete setup, premium ambience, flawless results.</p>
+        <a href="https://wa.me/237671319479?text=Hello%20Quixline!%20I%27d%20like%20to%20book%20a%20VIP%20Home%20Service%20Haircut." target="_blank" class="service-price">Book This Service</a>
+      </div>
+      <div class="service-card reveal delay-1" style="background:linear-gradient(135deg,rgba(201,168,76,0.08),rgba(201,168,76,0.03)); border-color:rgba(201,168,76,0.3);">
+        <div style="text-align:center;padding:20px 0;">
+          <div style="font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--gold);margin-bottom:12px;font-style:italic;">Custom Request?</div>
+          <p style="margin-bottom:24px;">Have something specific in mind? We love custom requests and special occasions.</p>
+          <a href="https://wa.me/237671319479?text=Hello%20Quixline!%20I%20have%20a%20custom%20hair%20request." target="_blank" class="btn-gold" style="display:inline-flex;font-size:0.75rem;padding:14px 28px;">
+            <span>Chat With Us</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PRICING ═══ -->
+<section id="pricing">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">Transparent Rates</div>
+      <h2 class="section-title">Our <em>Price List</em></h2>
+      <div class="divider"></div>
+      <p style="color:var(--text-muted);max-width:540px;line-height:1.9;font-weight:300;">
+        Quality grooming at fair prices. All services are mobile — we come to you anywhere in Yaoundé.
+      </p>
+    </div>
+    <div class="pricing-tabs">
+      <button class="pricing-tab active" onclick="switchTab('male', this)">✦ For Him</button>
+      <button class="pricing-tab" onclick="switchTab('female', this)">✦ For Her</button>
+      <button class="pricing-tab" onclick="switchTab('kids', this)">✦ Kids</button>
+    </div>
+
+    <!-- MALE -->
+    <div class="pricing-panel active" id="panel-male">
+      <div class="price-category reveal delay-1">
+        <div class="price-cat-header"><i class="fas fa-cut"></i><h3>Haircuts & Fades</h3></div>
+        <ul class="price-list">
+          <li class="price-item"><span class="price-item-name">Classic Cut</span><span class="price-item-dots"></span><span class="price-item-value">1 500 XAF</span></li>
+          <li class="price-item"><span class="price-item-name">Skin Fade</span><span class="price-item-dots"></span><span class="price-item-value">2 000 XAF</span></li>
+          <li class="price-item"><span class="price-item-name">Taper Fade</span><span class="price-item-dots"></span><span class="price-item-value">2 000 XAF</span></li>
+          <li class="price-item"><span class="price-item-name">High Top / Afro Shape</span><span class="price-item-dots"></span><span class="price-item-value">2 500 XAF</span></li>
+          <li class="price-item"><span class="price-item-name">Line-Up / Edge Up</span><span class="price-item-dots"></span><span class="price-item-value">1 000 XAF</span></li>
+          <li class="price-item"><span class="price-item-name">Dreadlocks Retwist</span><span class="price-item-dots"></span><span class="price-item-value">3 000 XAF</span></li>
+        </ul>
+        <a href="https://wa.me/237671319479?text=Hello%20Quixline!%20I%27d%20like%20to%20book%20a%20haircut." target="_blank" class="price-book-btn">Book Now →</a>
+      </div>
+      <div class="price-category reveal delay-2">
+        <div class="price-cat-header"><i class="fas fa-user-tie"></i><h3>Beard & Grooming</h3></div>
+        <ul class="price-list">
+          <li class="price-item"><span class="price-item-name">Beard Trim & Shape</span><span class="price-item-dots"></span><span class="price-item-value">1 000 XAF</span></li>
+          <li class="price-item"><span class="price-item-name">Full Beard Design</span><span class="price-item-dots"></span><span class="price-item-value">1 500 XAF</span></li>
+          <li class="price-item"><span class="price-item-name">Clean Razor Shave</span><span class="price-item-dots"></span><span class="price-item-value">1 500 XAF</span></li>
+          <li class="price-item"><span class="price-item-name">Cut + Beard Combo</span><span class="price-item-dots"></span><span class="price-item-value">3 000 XAF</span></li>
+          <li class="price-item"><span class="price-item-name">VIP Full Grooming Package</span><span class="price-item-dots"></span><span class="price-item-value">5 000 XAF</span></li>
+        </ul>
+        <a href="https://wa.me/237671319479?text=Hello%20Quixline!%20I%27d%20like%20to%20book%20beard%20grooming." target="_blank" class="price-book-btn">Book Now →</a>
+      </div>
+      <div class="price-category reveal delay-3">
+        <div class="price-cat-header"><i class="fas fa-palette"></i><h3>Color & Treatment</h3></div>
+        <ul class="price-list">
+          <li class="price-item"><span class="price-item-name">Hair Dyeing (single color)</span><span class="price-item-dots"></span><span class="price-item-value">4 000 XAF</span></li>
+          <li class="price-item"><span class="price-item-name">Highlights / Streaks</span><span class="price-item-dots"></span><span class="price-item-value">5 000 XAF</span></li>
+          <li class="price-item"><span class="price-item-name">Scalp Treatment</span><span class="price-item-dots"></span><span class="price-item-value">3 000 XAF</span></li>
+          <li class="price-item"><span class="price-item-name">Deep Conditioning</span><span class="price-item-dots"></span><span class="price-item-value">2 500 XAF</span></li>
+        </ul>
+        <a href="https://wa.me/237671319479?text=Hello%20Quixline!%20I%27d%20like%20to%20book%20color%20or%20treatment." target="_blank" class="price-book-btn">Book Now →</a>
+      </div>
+    </div>
+
+    <!-- FEMALE -->
+    <div class="pricing-panel" id="panel-female">
+      <div class="price-category reveal delay-1">
+        <div class="price-cat-header"><i class="fas fa-hands"></i><h3>Braiding Styles</h3></div>
+        <ul class="price-list">
+          <li class="price-item"><span class="price-item-name">Cornrows (simple)</span><span class="price-item-dots"></span><span class="price-item-value">2 000 XAF</span></li>
+          <li class="price-item"><span class="price-item-name">Box Braids (shoulder)</span><span class="price-item-dots"></span><span class="price-item-value">8 000 XAF</span></li>
+          <li class="price-item"><span class="price-item-name">Box Braids (long)</span><span class="price-item-dots"></span><span class="price-item-value">12 000 XAF</span></li>
+          <li class="price-item"><span class="price-item-name">Knotless Braids</span><span class="price-item-dots"></span><span class="price-item-value">10 000 XAF</span></li>
+          <li class="price-item"><span class="price-item-name">Faux Locs</span><span class="price-item-dots"></span><span class="price-item-value">15 000 XAF</span></li>
+          <li class="price-item"><span class="price-item-name">Senegalese Twists</span><span class="price-item-dots"></span><span class="price-item-value">10 000 XAF</span></li>
+          <li class="price-item"><span class="price-item-name">Passion Twists</span><span class="price-item-dots"></span><span class="price-item-value">12 000 XAF</span></li>
+        </ul>
+        <a href="https://wa.me/237654091559?text=Hello%20Quixline!%20I%27d%20like%20to%20book%20a%20braiding%20session." target="_blank" class="price-book-btn">Book Now →</a>
+      </div>
+      <div class="price-category reveal delay-2">
+        <div class="price-cat-header"><i class="fas fa-magic"></i><h3>Hair Styling</h3></div>
+        <ul class="price-list">
+          <li class="price-item"><span class="price-item-name">Wash & Blow Dry</span><span class="price-item-dots"></span><span class="price-item-value">3 000 XAF</span></li>
+          <li class="price-item"><span class="price-item-name">Flat Iron / Silk Press</span><span class="price-item-dots"></span><span class="price-item-value">4 000 XAF</span></li>
+          <li class="price-item"><span class="price-item-name">Weave Installation</span><span class="price-item-dots"></span><span class="price-item-value">8 000 XAF</span></li>
+          <li class="price-item"><span class="price-item-name">Wig Install & Style</span><span class="price-item-dots"></span><span class="price-item-value">5 000 XAF</span></li>
+          <li class="price-item"><span class="price-item-name">Updo / Special Occasion</span><span class="price-item-dots"></span><span class="price-item-value">6 000 XAF</span></li>
+          <li class="price-item"><span class="price-item-name">Trim & Shape</span><span class="price-item-dots"></span><span class="price-item-value">2 500 XAF</span></li>
+        </ul>
+        <a href="https://wa.me/237654091559?text=Hello%20Quixline!%20I%27d%20like%20to%20book%20a%20styling%20session." target="_blank" class="price-book-btn">Book Now →</a>
+      </div>
+      <div class="price-category reveal delay-3">
+        <div class="price-cat-header"><i class="fas fa-spa"></i><h3>Color & Treatment</h3></div>
+        <ul class="price-list">
+          <li class="price-item"><span class="price-item-name">Full Color (single shade)</span><span class="price-item-dots"></span><span class="price-item-value">8 000 XAF</span></li>
+          <li class="price-item"><span class="price-item-name">Highlights / Balayage</span><span class="price-item-dots"></span><span class="price-item-value">12 000 XAF</span></li>
+          <li class="price-item"><span class="price-item-name">Deep Conditioning Mask</span><span class="price-item-dots"></span><span class="price-item-value">3 500 XAF</span></li>
+          <li class="price-item"><span class="price-item-name">Protein Treatment</span><span class="price-item-dots"></span><span class="price-item-value">4 500 XAF</span></li>
+          <li class="price-item"><span class="price-item-name">Scalp Therapy</span><span class="price-item-dots"></span><span class="price-item-value">3 000 XAF</span></li>
+          <li class="price-item"><span class="price-item-name">Relaxer / Texturizer</span><span class="price-item-dots"></span><span class="price-item-value">5 000 XAF</span></li>
+        </ul>
+        <a href="https://wa.me/237654091559?text=Hello%20Quixline!%20I%27d%20like%20to%20book%20color%20or%20treatment." target="_blank" class="price-book-btn">Book Now →</a>
+      </div>
+    </div>
+
+    <!-- KIDS -->
+    <div class="pricing-panel" id="panel-kids">
+      <div class="price-category reveal delay-1">
+        <div class="price-cat-header"><i class="fas fa-child"></i><h3>Boys – Haircuts</h3></div>
+        <ul class="price-list">
+          <li class="price-item"><span class="price-item-name">Simple Cut (under 5)</span><span class="price-item-dots"></span><span class="price-item-value">800 XAF</span></li>
+          <li class="price-item"><span class="price-item-name">Classic Cut (5–10 yrs)</span><span class="price-item-dots"></span><span class="price-item-value">1 000 XAF</span></li>
+          <li class="price-item"><span class="price-item-name">Fade (10–15 yrs)</span><span class="price-item-dots"></span><span class="price-item-value">1 500 XAF</span></li>
+          <li class="price-item"><span class="price-item-name">Line-Up / Edge Up</span><span class="price-item-dots"></span><span class="price-item-value">700 XAF</span></li>
+          <li class="price-item"><span class="price-item-name">Dreadlocks Starter</span><span class="price-item-dots"></span><span class="price-item-value">2 000 XAF</span></li>
+          <li class="price-item"><span class="price-item-name">Cut + Line-Up Combo</span><span class="price-item-dots"></span><span class="price-item-value">1 500 XAF</span></li>
+        </ul>
+        <a href="https://wa.me/237671319479?text=Hello%20Quixline!%20I%27d%20like%20to%20book%20a%20kids%20haircut." target="_blank" class="price-book-btn">Book Now →</a>
+      </div>
+      <div class="price-category reveal delay-2">
+        <div class="price-cat-header"><i class="fas fa-baby"></i><h3>Girls – Hair Styling</h3></div>
+        <ul class="price-list">
+          <li class="price-item"><span class="price-item-name">Simple Cornrows</span><span class="price-item-dots"></span><span class="price-item-value">1 500 XAF</span></li>
+          <li class="price-item"><span class="price-item-name">Box Braids (kids)</span><span class="price-item-dots"></span><span class="price-item-value">5 000 XAF</span></li>
+          <li class="price-item"><span class="price-item-name">Twists (mini)</span><span class="price-item-dots"></span><span class="price-item-value">3 000 XAF</span></li>
+          <li class="price-item"><span class="price-item-name">Wash & Style</span><span class="price-item-dots"></span><span class="price-item-value">2 000 XAF</span></li>
+          <li class="price-item"><span class="price-item-name">Afro Puff / Bantu Knots</span><span class="price-item-dots"></span><span class="price-item-value">2 500 XAF</span></li>
+          <li class="price-item"><span class="price-item-name">Trim & Detangle</span><span class="price-item-dots"></span><span class="price-item-value">1 500 XAF</span></li>
+        </ul>
+        <a href="https://wa.me/237654091559?text=Hello%20Quixline!%20I%27d%20like%20to%20book%20a%20kids%20hair%20styling." target="_blank" class="price-book-btn">Book Now →</a>
+      </div>
+      <div class="price-category reveal delay-3">
+        <div class="price-cat-header"><i class="fas fa-star"></i><h3>Kids Add-Ons</h3></div>
+        <ul class="price-list">
+          <li class="price-item"><span class="price-item-name">Scalp Massage</span><span class="price-item-dots"></span><span class="price-item-value">500 XAF</span></li>
+          <li class="price-item"><span class="price-item-name">Hair Conditioning Rinse</span><span class="price-item-dots"></span><span class="price-item-value">1 000 XAF</span></li>
+          <li class="price-item"><span class="price-item-name">Hair Accessories (beads etc)</span><span class="price-item-dots"></span><span class="price-item-value">500 XAF</span></li>
+          <li class="price-item"><span class="price-item-name">Same-Day Booking Fee</span><span class="price-item-dots"></span><span class="price-item-value">Free</span></li>
+          <li class="price-item"><span class="price-item-name">Sibling Group (2+ kids)</span><span class="price-item-dots"></span><span class="price-item-value">–10% off</span></li>
+        </ul>
+        <a href="https://wa.me/237671319479?text=Hello%20Quixline!%20I%27d%20like%20to%20book%20for%20my%20kids." target="_blank" class="price-book-btn">Book Now →</a>
+      </div>
+    </div>
+
+    <div class="pricing-note reveal">
+      <strong>Note:</strong> Prices shown are base rates and may vary with hair length, product used, or style complexity. A travel fee of <strong>500 XAF</strong> may apply outside Biyam Assi. Kids prices apply to children under 15. Ask about group and event discounts.
+    </div>
+  </div>
+</section>
+
+<!-- ═══ GALLERY ═══ -->
+<section id="gallery">
+  <div class="container">
+    <div class="reveal" style="text-align:center;">
+      <div class="section-label" style="justify-content:center;">Our Work</div>
+      <h2 class="section-title">The <em>Gallery</em></h2>
+      <div class="divider" style="margin:20px auto 30px;"></div>
+      <p style="color:var(--text-muted);max-width:500px;margin:0 auto;line-height:1.9;font-weight:300;">
+        Every cut tells a story. Every style is a masterpiece. Click any image to view it full size.
+      </p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item reveal" onclick="openLightbox('images/gallery-1.jpg','Premium Barbing')">
+        <img src="images/gallery-1.jpg" alt="Premium Barbing" onerror="this.style.display='none'"/>
+        <div class="gallery-placeholder"><i class="fas fa-cut"></i><span>Barbing</span></div>
+        <div class="gallery-overlay"><span>Premium Barbing</span><small>Biyam Assi, Yaoundé</small></div>
+      </div>
+      <div class="gallery-item reveal delay-1" onclick="openLightbox('images/gallery-2.jpg','Skin Fade')">
+        <img src="images/gallery-2.jpg" alt="Skin Fade" onerror="this.style.display='none'"/>
+        <div class="gallery-placeholder"><i class="fas fa-cut"></i><span>Fade</span></div>
+        <div class="gallery-overlay"><span>Skin Fade</span></div>
+      </div>
+      <div class="gallery-item reveal delay-2" onclick="openLightbox('images/gallery-3.jpg','Box Braids')">
+        <img src="images/gallery-3.jpg" alt="Box Braids" onerror="this.style.display='none'"/>
+        <div class="gallery-placeholder"><i class="fas fa-hands"></i><span>Braids</span></div>
+        <div class="gallery-overlay"><span>Box Braids</span></div>
+      </div>
+      <div class="gallery-item reveal delay-3" onclick="openLightbox('images/gallery-4.jpg','Knotless Braids')">
+        <img src="images/gallery-4.jpg" alt="Knotless Braids" onerror="this.style.display='none'"/>
+        <div class="gallery-placeholder"><i class="fas fa-hands"></i><span>Knotless</span></div>
+        <div class="gallery-overlay"><span>Knotless Braids</span></div>
+      </div>
+      <div class="gallery-item reveal delay-1" onclick="openLightbox('images/gallery-5.jpg','Taper Fade')">
+        <img src="images/gallery-5.jpg" alt="Taper Fade" onerror="this.style.display='none'"/>
+        <div class="gallery-placeholder"><i class="fas fa-cut"></i><span>Taper Fade</span></div>
+        <div class="gallery-overlay"><span>Taper Fade</span></div>
+      </div>
+      <div class="gallery-item reveal delay-2" onclick="openLightbox('images/gallery-6.jpg','Faux Locs')">
+        <img src="images/gallery-6.jpg" alt="Faux Locs" onerror="this.style.display='none'"/>
+        <div class="gallery-placeholder"><i class="fas fa-hands"></i><span>Faux Locs</span></div>
+        <div class="gallery-overlay"><span>Faux Locs</span></div>
+      </div>
+      <div class="gallery-item reveal delay-3" onclick="openLightbox('images/gallery-7.jpg','Hair Coloring')">
+        <img src="images/gallery-7.jpg" alt="Hair Coloring" onerror="this.style.display='none'"/>
+        <div class="gallery-placeholder"><i class="fas fa-palette"></i><span>Color</span></div>
+        <div class="gallery-overlay"><span>Hair Coloring</span></div>
+      </div>
+      <div class="gallery-item reveal delay-1" onclick="openLightbox('images/gallery-8.jpg','Cornrows')">
+        <img src="images/gallery-8.jpg" alt="Cornrows" onerror="this.style.display='none'"/>
+        <div class="gallery-placeholder"><i class="fas fa-hands"></i><span>Cornrows</span></div>
+        <div class="gallery-overlay"><span>Cornrows</span></div>
+      </div>
+      <div class="gallery-item reveal delay-2" onclick="openLightbox('images/gallery-9.jpg','Beard Grooming')">
+        <img src="images/gallery-9.jpg" alt="Beard Grooming" onerror="this.style.display='none'"/>
+        <div class="gallery-placeholder"><i class="fas fa-user-tie"></i><span>Beard</span></div>
+        <div class="gallery-overlay"><span>Beard Grooming</span></div>
+      </div>
+      <div class="gallery-item reveal delay-3" onclick="openLightbox('images/gallery-10.jpg','Highlights')">
+        <img src="images/gallery-10.jpg" alt="Highlights" onerror="this.style.display='none'"/>
+        <div class="gallery-placeholder"><i class="fas fa-palette"></i><span>Highlights</span></div>
+        <div class="gallery-overlay"><span>Highlights</span></div>
+      </div>
+      <div class="gallery-item reveal delay-1" onclick="openLightbox('images/gallery-11.jpg','Senegalese Twists')">
+        <img src="images/gallery-11.jpg" alt="Senegalese Twists" onerror="this.style.display='none'"/>
+        <div class="gallery-placeholder"><i class="fas fa-hands"></i><span>Twists</span></div>
+        <div class="gallery-overlay"><span>Senegalese Twists</span></div>
+      </div>
+      <div class="gallery-item reveal delay-2" onclick="openLightbox('images/gallery-12.jpg','Kids Haircut')">
+        <img src="images/gallery-12.jpg" alt="Kids Haircut" onerror="this.style.display='none'"/>
+        <div class="gallery-placeholder"><i class="fas fa-child"></i><span>Kids</span></div>
+        <div class="gallery-overlay"><span>Kids Haircut</span></div>
+      </div>
+      <div class="gallery-item reveal delay-3" onclick="openLightbox('images/gallery-13.jpg','Kids Braids')">
+        <img src="images/gallery-13.jpg" alt="Kids Braids" onerror="this.style.display='none'"/>
+        <div class="gallery-placeholder"><i class="fas fa-baby"></i><span>Kids Braids</span></div>
+        <div class="gallery-overlay"><span>Kids Braids</span></div>
+      </div>
+      <div class="gallery-item reveal delay-1" onclick="openLightbox('images/gallery-14.jpg','Silk Press')">
+        <img src="images/gallery-14.jpg" alt="Silk Press" onerror="this.style.display='none'"/>
+        <div class="gallery-placeholder"><i class="fas fa-magic"></i><span>Silk Press</span></div>
+        <div class="gallery-overlay"><span>Silk Press</span></div>
+      </div>
+      <div class="gallery-item reveal delay-2" onclick="openLightbox('images/gallery-15.jpg','VIP Home Service')">
+        <img src="images/gallery-15.jpg" alt="VIP Home Service" onerror="this.style.display='none'"/>
+        <div class="gallery-placeholder"><i class="fas fa-crown"></i><span>VIP Service</span></div>
+        <div class="gallery-overlay"><span>VIP Home Service</span></div>
+      </div>
+      <div class="gallery-item reveal delay-3" onclick="openLightbox('images/gallery-16.jpg','Afro Shape')">
+        <img src="images/gallery-16.jpg" alt="Afro Shape" onerror="this.style.display='none'"/>
+        <div class="gallery-placeholder"><i class="fas fa-cut"></i><span>Afro Shape</span></div>
+        <div class="gallery-overlay"><span>Afro Shape</span></div>
+      </div>
+      <div class="gallery-item reveal delay-1" onclick="openLightbox('images/gallery-17.jpg','Weave Install')">
+        <img src="images/gallery-17.jpg" alt="Weave Install" onerror="this.style.display='none'"/>
+        <div class="gallery-placeholder"><i class="fas fa-magic"></i><span>Weave</span></div>
+        <div class="gallery-overlay"><span>Weave Install</span></div>
+      </div>
+      <div class="gallery-item reveal delay-2" onclick="openLightbox('images/gallery-18.jpg','Passion Twists')">
+        <img src="images/gallery-18.jpg" alt="Passion Twists" onerror="this.style.display='none'"/>
+        <div class="gallery-placeholder"><i class="fas fa-hands"></i><span>Passion Twists</span></div>
+        <div class="gallery-overlay"><span>Passion Twists</span></div>
+      </div>
+      <div class="gallery-item reveal delay-3" onclick="openLightbox('images/gallery-19.jpg','Hair Treatment')">
+        <img src="images/gallery-19.jpg" alt="Hair Treatment" onerror="this.style.display='none'"/>
+        <div class="gallery-placeholder"><i class="fas fa-spa"></i><span>Treatment</span></div>
+        <div class="gallery-overlay"><span>Hair Treatment</span></div>
+      </div>
+      <div class="gallery-item reveal delay-1" onclick="openLightbox('images/gallery-20.jpg','Dreadlocks')">
+        <img src="images/gallery-20.jpg" alt="Dreadlocks" onerror="this.style.display='none'"/>
+        <div class="gallery-placeholder"><i class="fas fa-hands"></i><span>Dreadlocks</span></div>
+        <div class="gallery-overlay"><span>Dreadlocks</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery Lightbox -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+  <img id="lbImg" src="" alt="Gallery Image"/>
+  <div class="lightbox-caption" id="lbCaption"></div>
+</div>
+
+<!-- ═══ WHY CHOOSE US ═══ -->
+<section id="why">
+  <div class="container">
+    <div class="reveal" style="text-align:center;">
+      <div class="section-label" style="justify-content:center;">Our Standards</div>
+      <h2 class="section-title">Why Choose <em>Quixline</em></h2>
+      <div class="divider" style="margin:20px auto;"></div>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal delay-1">
+        <div class="why-number">01</div>
+        <div class="why-content"><h3>Luxury Experience</h3><p>We don't just cut hair — we curate an experience. From arrival to the final look, every touchpoint is refined, attentive, and world-class.</p></div>
+      </div>
+      <div class="why-card reveal delay-2">
+        <div class="why-number">02</div>
+        <div class="why-content"><h3>Professional Tools</h3><p>We invest in premium, industry-grade equipment — sharp blades, quality products, sanitary setups — so every result is salon-perfect.</p></div>
+      </div>
+      <div class="why-card reveal delay-3">
+        <div class="why-number">03</div>
+        <div class="why-content"><h3>On-Time Service</h3><p>We respect your schedule. Our team arrives punctually, works efficiently, and ensures zero disruption to your day.</p></div>
+      </div>
+      <div class="why-card reveal delay-4">
+        <div class="why-number">04</div>
+        <div class="why-content"><h3>Hygienic & Safe</h3><p>We follow strict sanitization protocols before every appointment — clean tools, fresh capes, and a sterile environment, always.</p></div>
+      </div>
+      <div class="why-card reveal delay-5">
+        <div class="why-number">05</div>
+        <div class="why-content"><h3>Great With Kids</h3><p>We're patient, gentle, and experienced with children. We make every kids' session fun, comfortable, and stress-free for the whole family.</p></div>
+      </div>
+      <div class="why-card reveal delay-1">
+        <div class="why-number">06</div>
+        <div class="why-content"><h3>Affordable Luxury</h3><p>Premium quality shouldn't break the bank. We offer competitive pricing without compromising on the standard of service you deserve.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ BOOKING ═══ -->
+<section id="booking">
+  <div class="container">
+    <div class="booking-grid">
+      <div class="booking-info reveal-left">
+        <div class="section-label">Get Started</div>
+        <h2>Book Your <em style="color:var(--gold);font-style:italic;">Premium Session</em></h2>
+        <div class="divider"></div>
+        <p>Ready to experience the Quixline difference? Fill in the form and we'll contact you instantly on WhatsApp to confirm your appointment.</p>
+        <ul class="booking-features">
+          <li><i class="fas fa-check"></i> Same-day bookings available</li>
+          <li><i class="fas fa-check"></i> Home, office, or event locations</li>
+          <li><i class="fas fa-check"></i> Instant WhatsApp confirmation</li>
+          <li><i class="fas fa-check"></i> Flexible scheduling</li>
+          <li><i class="fas fa-check"></i> Group & family bookings welcome</li>
+          <li><i class="fas fa-check"></i> Kids sessions available</li>
+        </ul>
+      </div>
+      <div class="booking-form reveal-right">
+        <div class="section-label">Book Appointment</div>
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" id="clientName" placeholder="Your full name" />
+        </div>
+        <div class="form-group">
+          <label>Phone Number</label>
+          <input type="tel" id="clientPhone" placeholder="+237 6XX XXX XXX" />
+        </div>
+        <div class="form-group">
+          <label>Service</label>
+          <select id="serviceSelect">
+            <option value="">— Select a service —</option>
+            <optgroup label="For Him">
+              <option value="Haircut / Fade (Male)">Haircut / Fade</option>
+              <option value="Beard Grooming">Beard Grooming</option>
+              <option value="Cut + Beard Combo">Cut + Beard Combo</option>
+              <option value="VIP Full Grooming Package">VIP Full Grooming Package</option>
+            </optgroup>
+            <optgroup label="For Her">
+              <option value="Hair Braiding">Hair Braiding</option>
+              <option value="Hair Styling">Hair Styling</option>
+              <option value="Hair Coloring & Dyeing">Hair Coloring & Dyeing</option>
+              <option value="Hair Treatment">Hair Treatment</option>
+              <option value="Weave / Wig Installation">Weave / Wig Installation</option>
+            </optgroup>
+            <optgroup label="Kids">
+              <option value="Kids Haircut (Boys)">Kids Haircut – Boys</option>
+              <option value="Kids Hair Styling (Girls)">Kids Hair Styling – Girls</option>
+            </optgroup>
+            <option value="Custom / Consultation">Custom / Consultation</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Preferred Date & Time</label>
+          <input type="text" id="clientDate" placeholder="e.g. Tomorrow, 3 PM" />
+        </div>
+        <div class="form-group">
+          <label>Location / Address</label>
+          <input type="text" id="clientLocation" placeholder="Your address in Yaoundé" />
+        </div>
+        <button class="btn-submit" onclick="bookOnWhatsApp()">
+          <i class="fab fa-whatsapp"></i> Send Booking Request
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CONTACT ═══ -->
+<section id="contact">
+  <div class="container">
+    <div class="reveal" style="text-align:center;margin-bottom:60px;">
+      <div class="section-label" style="justify-content:center;">Get In Touch</div>
+      <h2 class="section-title">Find <em>Us</em></h2>
+      <div class="divider" style="margin:20px auto;"></div>
+    </div>
+    <div class="contact-grid">
+      <div>
+        <div class="contact-item reveal delay-1">
+          <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div class="contact-detail">
+            <h4>Location</h4>
+            <p>Biyam Assi, Yaoundé<br/>Centre Region, Cameroon</p>
+          </div>
+        </div>
+        <div class="contact-item reveal delay-2">
+          <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+          <div class="contact-detail">
+            <h4>Quin – WhatsApp</h4>
+            <a href="https://wa.me/237671319479?text=Hello%20Quixline!" target="_blank">+237 671 319 479</a>
+          </div>
+        </div>
+        <div class="contact-item reveal delay-3">
+          <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+          <div class="contact-detail">
+            <h4>Alexine – WhatsApp</h4>
+            <a href="https://wa.me/237654091559?text=Hello%20Quixline!" target="_blank">+237 654 091 559</a>
+          </div>
+        </div>
+        <div class="contact-item reveal delay-4">
+          <div class="contact-icon"><i class="fas fa-clock"></i></div>
+          <div class="contact-detail">
+            <h4>Hours</h4>
+            <p>Mon – Sat: 8:00 AM – 8:00 PM<br/>Sunday: By appointment</p>
+          </div>
+        </div>
+      </div>
+      <div class="map-placeholder reveal-right">
+        <i class="fas fa-map-marked-alt"></i>
+        <span>Based In</span>
+        <p>Biyam Assi, Yaoundé</p>
+        <p style="font-family:'Poppins',sans-serif;font-size:0.8rem;color:var(--text-muted);margin-top:8px;">We come to you — anywhere in Yaoundé & surroundings</p>
+        <a href="https://wa.me/237671319479?text=Hello!%20Can%20you%20please%20send%20me%20your%20location%3F" target="_blank" class="btn-gold" style="margin-top:24px;font-size:0.75rem;padding:14px 28px;text-decoration:none;">
+          <span>Get Location on WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <div class="footer-logo">QUIXLINE</div>
+  <div class="footer-tagline">Luxury Mobile Salon · Biyam Assi, Yaoundé</div>
+  <div class="footer-socials">
+    <a href="https://instagram.com" target="_blank" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://facebook.com" target="_blank" class="social-link" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://wa.me/237671319479?text=Hello%20Quixline!" target="_blank" class="social-link" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://tiktok.com" target="_blank" class="social-link" title="TikTok"><i class="fab fa-tiktok"></i></a>
+  </div>
+  <div class="footer-copy">
+    © 2025 <span>Quixline Mobile Salon</span>. All rights reserved. Crafted by Quin &amp; Alexine.
+  </div>
+</footer>
+
+<!-- ═══ FLOATING WHATSAPP ═══ -->
+<a href="https://wa.me/237671319479?text=Hello%20Quixline!%20I%27d%20like%20to%20book%20a%20service." target="_blank" class="whatsapp-float" title="Chat on WhatsApp">
+  <div class="wa-pulse"></div>
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
