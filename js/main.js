@@ -19,16 +19,15 @@ window.addEventListener('scroll', () => {
 });
 
 // ─── SCROLL REVEAL ───
-const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
-const observer = new IntersectionObserver((entries) => {
+const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach(e => {
     if (e.isIntersecting) {
       e.target.classList.add('visible');
-      observer.unobserve(e.target);
+      revealObserver.unobserve(e.target);
     }
   });
 }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-revealEls.forEach(el => observer.observe(el));
+document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => revealObserver.observe(el));
 
 // ─── WHATSAPP BOOKING ───
 function bookOnWhatsApp() {
@@ -47,10 +46,10 @@ function bookOnWhatsApp() {
     + `*New Booking Request*\n`
     + `━━━━━━━━━━━━━━━━━━\n`
     + `👤 *Name:* ${name}\n`
-    + (phone    ? `📞 *Phone:* ${phone}\n`            : '')
+    + (phone    ? `📞 *Phone:* ${phone}\n`          : '')
     + `✂️ *Service:* ${service}\n`
-    + (date     ? `📅 *Preferred Time:* ${date}\n`    : '')
-    + (location ? `📍 *Location:* ${location}\n`      : '')
+    + (date     ? `📅 *Preferred Time:* ${date}\n`  : '')
+    + (location ? `📍 *Location:* ${location}\n`    : '')
     + `━━━━━━━━━━━━━━━━━━\n`
     + `Please confirm my appointment. Thank you! 🙏`;
 
@@ -80,6 +79,17 @@ function closeLightbox() {
 document.addEventListener('keydown', e => {
   if (e.key === 'Escape') closeLightbox();
 });
+
+// ─── GALLERY FADE-IN ───
+const galleryObserver = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      galleryObserver.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.1 });
+document.querySelectorAll('.gallery-item').forEach(el => galleryObserver.observe(el));
 
 // ─── GOLD CURSOR TRAIL ───
 document.addEventListener('mousemove', (e) => {
